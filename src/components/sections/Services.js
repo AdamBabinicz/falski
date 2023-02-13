@@ -17,7 +17,7 @@ import ServiceItem from "../serviceitem/ServiceItem";
 function Services() {
   const theme = useTheme();
   return (
-    <ServicesStyled theme={theme}>
+    <ServicesStyled id="publikacje" theme={theme}>
       <Title
         name={"Publikacje"}
         desc={
