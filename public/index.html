@@ -1,43 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+      name="DESCRIPTION"
+      content="Dla mieszkańców Kraszewic i Kuźnicy Grabowskiej oraz powiatu ostrzeszowskiego osoba i dzieło profesora Mariana Falskiego stały się zalążkiem wielu społecznych inicjatyw."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta
+      name="Muzeum Oświaty w Kuźnicy i Ruch Samorządowy noszące jego imię, Szkoła Podstawowa w Kraszewicach to instytucje propagujące dokonania profesora, inicjujące wiele działań nie tylko związanych ze szkolnictwem i oświatą,skupiające społeczność lokalną wokół działań dla dobra i na rzecz wszystkich."
+      content="index, follow"
+    />
+    <meta name="handheldFriendly" content="true" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="'Ta wersja czasów socrealizmu wydaje się także – wedle dzisiejszych kanonów – najbardziej niepedagogiczna. Nieszczęście goni nieszczęście, dzieci stresowane są w co drugiej czytance. 'Morusek (to pies) goni kogutka. Morusek go dogoni. Morusek go udusi' - straszy Falski. [...] Lub wiersz o komarze, który spadł z drzewa. Mimo wysiłków całej leśnej entomologicznej rodziny, kona. A konając prosi: 'Pochowajcie mnie w leszczynie. Grób usypcie mi w gęstwinie'."
+    />
+    <meta property="og:url" content="https://kobiela.netlify.app" />
+    <meta property="og:image" content="https://kobiela.netlify.app/0062.jpg" />
+    <meta property="fb:app_id" content="1951716098397474" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="1200" />
+    <meta
+      property="business:contact_data:street_address"
+      content="51°30′03″N 0°08′31″W"
+    />
+    <meta
+      property="business:contact_data:locality"
+      content="Elementarz początkowo nawet nie był elementarzem."
+    />
+    <meta property="business:contact_data:region" content="Marian Falski" />
+    <meta property="business:contact_data:postal_code" content="W1K, W1J" />
+    <meta property="business:contact_data:country_name" content="Radom" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:site"
+      content="https://twitter.com/jan34733995/status/1145970140015734785"
+    />
+    <meta
+      name="twitter:title"
+      content="'Elementarz ujawnia swoje kolejne wcielenie. Mniej smutne (bez komara i kogutka, bez Moruska i bolących zębów) i mniej ideologiczne (bez Bieruta, Rokossowskiego, pionierów i Nowej Huty). Za to bardziej kolorowe i wesołe. Dzieci są pogodne, a świat wydaje się ładniejszy. Ta wersja przetrwała siedemnaście lat, choć autor bezskutecznie już od połowy lat sześćdziesiątych domagał się unowocześnienia podręcznika'."
+    />
+    <meta
+      name="twitter:description"
+      content="Ostatnia nowa wersja podręcznika ukazała się w 1974 roku, już po śmierci autora. Przedmiotem zmian były przede wszystkim ilustracje (pierwsze wydanie z 1910 roku ilustrował Jan Rembowski, malarz związany m.in. z secesją). Janusz Grabiański wykreował świat nowoczesny, kolorowy, pełen samochodów, dobrej architektury, modnie ubranych ludzi. Oczywiście zaktualizowano też teksty."
+    />
+    <meta name="twitter:image" content="https://kobiela.netlify.app/0079.jpg" />
+    <meta
+      name="twitter:image:alt"
+      content="W 1964 roku Falski wraz z grupą uczonych i pisarzy, złożył swój podpis pod słynnym 'Listem 34' do premiera Józefa Cyrankiewicza, zawierającym żądanie zmiany polityki kulturalnej i zniesienia cenzury."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/8.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- UNICONS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Elementarz M. Falskiego</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "VideoObject",
+        "name": "Marian Falski",
+        "contentUrl": "https://www.facebook.com/watch/?ref=search&v=289679405726715&external_log_id=072a9c60-b859-4add-a2af-ec4956e14951&q=Bogumil%20Kobiela",
+        "duration": "PT00H04M33S",
+        "thumbnailUrl": "https://kobiela.netlify.app/0114.jpg",
+        "uploadDate": "2023-02-13",
+        "description": "Inna ciekawostką związaną z tekstem 'Elementarza' jest postać jego bohaterki, obecnej w słynnym zdaniu Ali. Była nią urodzona w 1922 roku Alina Margolis, z której mamą Marian Falski się przyjaźnił."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Blog",
+        "url": "https://kobiela.netlify.app"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "Autor Elementarza",
+        "url": "https://kobiela.netlify.app",
+        "sameAs": [
+          "https://www.facebook.com/watch/?ref=search&v=444684342969258&external_log_id=072a9c60-b859-4add-a2af-ec4956e14951&q=Bogumil%20Kobiela",
+          "https://pl.wikipedia.org/wiki/Bogumi%C5%82_Kobiela",
+          "https://twitter.com/jan34733995/status/1145970140015734785",
+          "https://www.google.com/search?q=youtube+bogumi%C5%82+kobiela&rlz=1C1YTUH_plPL942PL942&ei=9ILNY6K1A9OSxc8P54CBsAg&ved=0ahUKEwii_8Hb6dv8AhVTSfEDHWdAAIYQ4dUDCA8&uact=5&oq=youtube+bogumi%C5%82+kobiela&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIGCAAQCBAeOggIABAIEAcQHkoECEEYAEoECEYYAFAAWPIWYK0gaABwAHgAgAF0iAHOBZIBAzMuNJgBAKABAcABAQ&sclient=gws-wiz-serp#fpstate=ive&vld=cid:db0ead8f,vid:8EHij6C8BLs",
+          "https://pl.pinterest.com/pin/565694403185065154"
+        ]
+      }
+    </script>
   </body>
 </html>
