@@ -114,7 +114,7 @@ const PortfoliosStyled = styled(SectionLayout)`
     gap: 2rem;
 
     @media screen and (max-width: 768px) {
-      /* grid-template-columns: 1fr; */
+      grid-template-columns: 1fr;
     }
   }
 
