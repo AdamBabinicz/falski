@@ -126,7 +126,7 @@ const BlogItemStyled = styled.div`
     border-radius: 10px;
 
     @media only screen and (max-width: 768px) {
-      width: fit-content;
+      width: 80%;
     }
     &::-webkit-scrollbar {
       width: 0;
