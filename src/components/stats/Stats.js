@@ -35,7 +35,7 @@ function Stats({ icon, number, desc }) {
 
 const StatsStyled = styled.div`
   position: relative;
-  z-index: 5;
+  z-index: 0;
   border-radius: 10px;
 
   .inner-con {

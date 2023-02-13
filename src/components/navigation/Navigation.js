@@ -69,6 +69,10 @@ const NavigationStyled = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media only screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
     li {
       margin: 0 1rem;
       a {

@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 1000;
+  z-index: 1000 !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +53,7 @@ export const GlobalStyle = createGlobalStyle`
   padding: 4.5rem 2.5rem 2.5rem;
   border-radius: 1.5rem;
   color: #333;
-  z-index: 999;
+  z-index: 999 !important;
 }
 .services__modal-close {
   position: absolute;
@@ -75,7 +75,7 @@ export const GlobalStyle = createGlobalStyle`
   margin-bottom: 2rem;
   text-align: left;
   color: #222121;
-  /* line-height: 0.8rem; */
+  line-height: 1rem;
 }
 .services__modal-services {
   row-gap: 0.75rem;

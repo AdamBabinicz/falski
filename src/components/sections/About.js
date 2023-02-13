@@ -153,7 +153,7 @@ const AboutStyled = styled(SectionLayout)`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
-    z-index: 5;
+    z-index: 0;
 
     @media screen and (max-width: 1150px) {
       grid-template-columns: 1fr;

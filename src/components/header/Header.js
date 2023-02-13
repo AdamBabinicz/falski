@@ -164,7 +164,7 @@ const HeaderStyled = styled.header`
     justify-content: center;
     flex-direction: column;
     position: relative;
-    z-index: 5;
+    z-index: 1;
 
     @media screen and (max-width: 1060px) {
       .left-h-content {
@@ -213,7 +213,7 @@ const HeaderStyled = styled.header`
     position: absolute;
     right: 15%;
     bottom: 8%;
-    z-index: 2;
+    z-index: 1;
 
     @media screen and (max-width: 1060px) {
       display: none;
@@ -233,7 +233,7 @@ const HeaderStyled = styled.header`
     width: 100%;
     height: 100%;
     background: ${(props) => props.theme.colorBg};
-    z-index: 3;
+    z-index: 1;
     opacity: 0.3;
 
     @media screen and (max-width: 1060px) {
