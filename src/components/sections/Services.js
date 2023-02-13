@@ -65,6 +65,10 @@ const ServicesStyled = styled(SectionLayout)`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     grid-gap: 2rem;
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 `;
 
