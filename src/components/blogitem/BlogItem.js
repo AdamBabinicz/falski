@@ -50,7 +50,7 @@ function BlogItem({
             <img src={image1} alt="..." />
             <p>{desc2}</p>
             <div className="share-content">
-              <p>Share: </p>
+              <p>Udział: </p>
               <a href="#" target="_blank" rel="noreferrer noopener">
                 Facebook
               </a>
@@ -60,9 +60,9 @@ function BlogItem({
               <a href="#" target="_blank" rel="noreferrer noopener">
                 Twitter
               </a>
-              <a href="#" target="_blank" rel="noreferrer noopener">
+              {/* <a href="#" target="_blank" rel="noreferrer noopener">
                 LinkedIn
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -201,6 +201,10 @@ const BlogItemStyled = styled.div`
         display: flex;
         align-items: center;
         gap: 1rem;
+
+        @media only screen and (max-width: 768px) {
+          flex-wrap: wrap;
+        }
         a {
           text-decoration: underline;
           font-weight: 500;
