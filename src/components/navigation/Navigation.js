@@ -82,6 +82,7 @@ const NavigationStyled = styled.nav`
       padding: 1rem 2rem;
       height: max-content;
       padding-bottom: 2rem;
+      margin-bottom: 2rem;
       width: 100%;
       background: ${(props) => props.theme.colorBg2};
     }
