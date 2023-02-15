@@ -25,8 +25,15 @@ const TimelineItemStyled = styled.div`
   position: relative;
   border-left: 1px solid ${(props) => props.theme.colorPrimary};
 
+  .timeline-info p {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+  }
+
   @media screen and (max-width: 676px) {
-    padding-left: 1rem;
+    padding-left: 0.8rem;
+  }
+  .timeline-info p {
+    width: 100%;
   }
   .duration {
     color: ${(props) => props.theme.colorGrey2};

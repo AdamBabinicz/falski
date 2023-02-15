@@ -74,7 +74,7 @@ const TimelineStyled = styled.div`
   }
   .timeline {
     background: ${(props) => props.theme.colorBg5};
-    padding: 2rem;
+    /* padding: 2rem; */
     border-radius: 10px;
   }
 
