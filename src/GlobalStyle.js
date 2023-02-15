@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
-   /* z-index: 1000 !important; */
+  z-index: 1000 !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +82,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 .services__modal-services img {
   height: 150px;
-  width: fit-content;
+  width: 100%;
   object-fit: contain;
   box-shadow: 0px -1px 15px -5px #454343;
   -webkit-box-shadow: 0px -1px 15px -5px #dad0d0;
