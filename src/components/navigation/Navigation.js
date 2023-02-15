@@ -76,11 +76,11 @@ const NavigationStyled = styled.nav`
     justify-content: space-between;
 
     @media only screen and (max-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 1rem;
-      padding: 0 2rem;
-      height: fit-content;
+      padding: 1rem 2rem;
+      height: max-content;
       padding-bottom: 2rem;
       width: 100%;
       background: ${(props) => props.theme.colorBg2};
