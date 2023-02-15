@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { useTheme } from "../../context/themeContext";
 
 function Navigation({ toggle }) {
   const theme = useTheme();
+
+  const [toggle, setToggle] = useState();
   return (
     <NavigationStyled toggle={toggle} theme={theme}>
       <ul className="nav-items">
@@ -38,7 +40,7 @@ const NavigationStyled = styled.nav`
   transition: all 0.3s ease-in-out;
   left: 50%;
   top: 0;
-  background-color: red;
+  background: red;
   min-height: 10vh;
   transform: translateX(-50%)
     translateY(${(props) => (props.toggle ? "-100%" : 0)})
@@ -50,7 +52,7 @@ const NavigationStyled = styled.nav`
   align-items: center;
   justify-content: center;
   width: 850px;
-  background-color: ${(props) => props.theme.colorBg2};
+  background: ${(props) => props.theme.colorBg2};
   margin: 0 auto;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -71,10 +73,19 @@ const NavigationStyled = styled.nav`
     justify-content: space-between;
 
     @media only screen and (max-width: 768px) {
-      flex-wrap: wrap;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+      background: ${(props) => props.theme.colorBg2};
+      padding: 4rem 0;
     }
     li {
-      margin: 0 1rem;
+      @media only screen and (max-width: 768px) {
+        margin: 0;
+      }
       a {
         padding: 0.6rem 0.3rem;
         position: relative;
@@ -87,7 +98,7 @@ const NavigationStyled = styled.nav`
           left: 0;
           width: 0%;
           height: 2px;
-          background-color: ${(props) => props.theme.colorPrimary};
+          background: ${(props) => props.theme.colorPrimary};
           transition: all 0.4s ease-in-out;
         }
         &:hover:after {
