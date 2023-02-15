@@ -185,7 +185,7 @@ const BlogItemStyled = styled.div`
             transform: translateY(-50%);
             width: 0.5rem;
             height: 0.5rem;
-            background-color: ${(props) => props.theme.colorYellow};
+            background: ${(props) => props.theme.colorYellow};
             border-radius: 50%;
           }
         }
