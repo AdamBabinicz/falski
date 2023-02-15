@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 1000 !important;
+   /* z-index: 1000 !important; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +53,7 @@ export const GlobalStyle = createGlobalStyle`
   padding: 4.5rem 2.5rem 2.5rem;
   border-radius: 1.5rem;
   color: #333;
-  z-index: 999 !important;
+  z-index: 9999 !important;
 }
 .services__modal-close {
   position: absolute;
@@ -115,19 +115,20 @@ export const GlobalStyle = createGlobalStyle`
   }
 }
 
-    }
+    
 
     a, button, input{
         font-family: inherit;
         font-size: inherit;
         text-decoration: none;
+        cursor: pointer;
     }
 
     button {
         background: none;
         border: none;
     }
-
+    
     #tsparticles{
         height: 100vh ;
     }
@@ -151,4 +152,5 @@ export const GlobalStyle = createGlobalStyle`
         opacity: 0.2;
         border: 0 solid rgb(249, 215, 76);
     }
+     }  
 `;

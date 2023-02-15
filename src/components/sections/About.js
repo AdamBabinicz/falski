@@ -50,25 +50,9 @@ function About() {
             inny podręcznik szkolny nie doczekał się tylu wydań – powiedział
             prof. Ryszard Wroczyński.
           </p>
-          {/* <div className="progress-bars">
-            <Progressbar
-              bg={theme.colorPrimary}
-              service={"Złoty Krzyż Zasługi"}
-              progress={"85"}
-            />
-            <Progressbar
-              bg={theme.colorPurple}
-              service={"Web Development"}
-              progress={"85"}
-            />
-            <Progressbar
-              bg={theme.colorGreen}
-              service={"Web Development"}
-              progress={"85"}
-            />
-          </div> */}
+
           <div className="btn-con">
-            <button onClick={() => toggleTab(1)}>
+            <div onClick={() => toggleTab(1)}>
               <Button
                 name="Więcej"
                 blob="blob"
@@ -80,7 +64,7 @@ function About() {
                 bRad={"30px"}
                 bPad={theme.bPad1}
               />
-            </button>
+            </div>
 
             <div
               className={
@@ -153,7 +137,7 @@ const AboutStyled = styled(SectionLayout)`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
-    z-index: 0;
+    z-index: 1;
 
     @media screen and (max-width: 1150px) {
       grid-template-columns: 1fr;

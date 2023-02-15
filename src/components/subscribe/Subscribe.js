@@ -23,7 +23,7 @@ function Subscribe() {
       </h4>
       <img src={img} alt="..." />
       <div className="btn-con">
-        <button onClick={() => toggleTab(1)}>
+        <div onClick={() => toggleTab(1)}>
           <Button
             name="Czytaj"
             blob="blob"
@@ -35,7 +35,7 @@ function Subscribe() {
             bPad={theme.bPad1}
             icon={arrow}
           />
-        </button>
+        </div>
 
         <div
           className={

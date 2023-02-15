@@ -17,8 +17,8 @@ function Blogs() {
         />
       </div>
       <div className="blogs-con">
-        {blogs.map((blog) => {
-          return <BlogItem {...blog} />;
+        {blogs.map((blog, index) => {
+          return <BlogItem key={index} {...blog} />;
         })}
       </div>
     </BlogsStyled>

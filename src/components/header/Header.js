@@ -33,9 +33,6 @@ function Header({ toggle, setToggle }) {
       </div>
       <div className="left-header">
         <div className="left-h-content">
-          {/* <h2>
-            Elementarz M<span>.</span> Falskiego
-          </h2> */}
           <h1>książka,</h1>
           <p className="profession">która mną wstrząsnęła!</p>
           <p className="description">
@@ -47,7 +44,7 @@ function Header({ toggle, setToggle }) {
             <p>jej piętno czuję na sobie do dzisiaj!</p>
           </p>
           <div className="btn-con">
-            <button onClick={() => toggleTab(1)}>
+            <div onClick={() => toggleTab(1)}>
               <Button
                 name={"Czytaj"}
                 blob={"blob"}
@@ -58,7 +55,7 @@ function Header({ toggle, setToggle }) {
                 bPad={theme.bPad1}
                 icon={read}
               />
-            </button>
+            </div>
 
             <div
               className={
@@ -213,7 +210,6 @@ const HeaderStyled = styled.header`
     position: absolute;
     right: 15%;
     bottom: 8%;
-    z-index: 2;
 
     @media screen and (max-width: 1060px) {
       display: none;
@@ -245,7 +241,7 @@ const HeaderStyled = styled.header`
     right: 0;
     top: -15%;
     width: 105%;
-    z-index: 1;
+    z-index: -1;
 
     @media screen and (max-width: 1060px) {
       display: none;

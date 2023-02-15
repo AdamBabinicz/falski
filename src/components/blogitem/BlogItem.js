@@ -60,9 +60,6 @@ function BlogItem({
               <a href="#" target="_blank" rel="noreferrer noopener">
                 Twitter
               </a>
-              {/* <a href="#" target="_blank" rel="noreferrer noopener">
-                LinkedIn
-              </a> */}
             </div>
           </div>
         </div>
