@@ -142,13 +142,13 @@ const BlogItemStyled = styled.div`
       img {
         width: 100%;
         object-fit: cover;
-        height: 400px;
+        height: auto;
 
         @media only screen and (max-width: 676px) {
         }
         &:first-child {
           width: 100%;
-          height: 550px;
+          height: auto;
           object-fit: cover;
 
           @media only screen and (max-width: 676px) {
