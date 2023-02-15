@@ -5,15 +5,18 @@ import { useTheme } from "../../context/themeContext";
 function Navigation({ toggle }) {
   const theme = useTheme();
 
-  const [toggle, setToggle] = useState();
+  const [open, setOpen] = useState(false);
+
   return (
     <NavigationStyled toggle={toggle} theme={theme}>
-      <ul className="nav-items">
-        <li>
-          <a href="/">Start</a>
+      <ul className={open ? "nav-items exp" : "nav-items"}>
+        <li className="nav-item">
+          <a href="/#">Start</a>
         </li>
         <li className="nav-item">
-          <a href="#falski">M.&nbsp;Falski</a>
+          <a href="#falski" onClick={() => setOpen(!open)}>
+            M.&nbsp;Falski
+          </a>
         </li>
         <li className="nav-item">
           <a href="#publikacje">Publikacje</a>
@@ -73,15 +76,16 @@ const NavigationStyled = styled.nav`
     justify-content: space-between;
 
     @media only screen and (max-width: 768px) {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      flex-direction: column;
-      height: 100vh;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      padding: 0 2rem;
+      height: fit-content;
+      padding-bottom: 2rem;
       width: 100%;
       background: ${(props) => props.theme.colorBg2};
-      padding: 4rem 0;
     }
+
     li {
       @media only screen and (max-width: 768px) {
         margin: 0;

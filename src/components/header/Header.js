@@ -17,7 +17,7 @@ function Header({ toggle, setToggle }) {
   };
 
   return (
-    <HeaderStyled theme={theme}>
+    <HeaderStyled theme={theme} id="/">
       <div className="particles-con">
         <Particle />
       </div>
